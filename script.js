@@ -1,5 +1,5 @@
 let currentDog;
-let currentLabrador;
+let currentLabrador = [];
 let currentCollection;
 
 const UI = {
