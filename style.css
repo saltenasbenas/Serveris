@@ -5,19 +5,7 @@ body {
   margin: auto;
 }
 
-.dogWrapper {
-  width: 90%;
-  max-width: 600px;
-  height: auto;
-  margin: 100px auto;
-  border: 2px solid black;
-  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.newDogButton {
+.newDogButton, .newCollectionButton, .newLabradorButton {
   border: none;
   font: inherit;
   font-size: 32px;
@@ -28,5 +16,10 @@ body {
   width: 90%;
   max-width: 600px;
   margin: auto;
+}
+
+body > div > img {
+  max-width: 200px;
+  height: 200px;
 }
 /*# sourceMappingURL=style.css.map */
