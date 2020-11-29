@@ -37,7 +37,7 @@ function fetchDog () {fetch("https://dog.ceo/api/breeds/image/random").then((res
 });
 }
 
-function fetchLabrador () {fetch("https://dog.ceo/api/breed/Labrador/images/random").then((response) => {
+function fetchLabrador () {fetch("https://dog.ceo/api/breed/labrador/images/random").then((response) => {
     console.log("Atsakymas gautas is serverio", response);
     
     response.json().then((data) => {
@@ -56,7 +56,7 @@ function fetchCollection () {fetch("https://dog.ceo/api/breed/hound/images/rando
     
     response.json().then((data) => {
     //    console.log("Suo gautas ir paverstas i JSON", data);
-       currentCollection = data;
+       currentCollection = data.message;
        console.log(currentCollection);
        renderCollection();
        
@@ -69,7 +69,10 @@ function renderDog () {
     UI.dogImage.src= currentDog.message;
 };
 function renderCollection () {
-    UI.dogCollection.src= currentCollection.message;
+    for (let photo of currentCollection) {
+        UI.dogCollection.innerHTML += `<img src="${photo}" >`;
+    }
+   
 };
 function renderLabrador () {
     UI.dogLabrador.src= currentLabrador.message;

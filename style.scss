@@ -19,9 +19,18 @@ body {
     background-color: #2980b9;
     width: 90%;
     max-width: 600px;
-    margin: auto;
+    display: block;
+    margin: 0 auto;
 }
 body > div > img {
     max-width: 200px;
     height: 200px;
+    margin: auto;
+}
+.dogCollection img {
+   
+    max-width: 200px;
+    height: 200px;
+    margin: auto;
+
 }
